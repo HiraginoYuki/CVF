@@ -13,18 +13,26 @@
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<style>
-		
+		html {
+			overflow: auto;
+		}
+		body {
+			overflow: hidden;
+		}
 		img#unko {
 			margin-left: 0px;
 			margin-right: 0px;
 		}
-		
+		.slick-slide {
+			outline: none;
+			width: 98%;
+		}
 	</style>
 </head>
 <body>
-	<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" id="navbar">
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbar" style="display: none;">
 		<h1><a class="navbar-brand" href="#">CVF</a></h1>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border-color: rgba(0,0,0,0);">
 		  <span class="navbar-toggler-icon"></span>
 		</button>
 	  
@@ -46,9 +54,6 @@
 				<div class="dropdown-divider"></div>
 				<a class="dropdown-item" href="#">Something else here</a>
 			  </div>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link disabled" href="#">Disabled</a>
 			</li>
 		  </ul>
 		</div>
@@ -80,104 +85,57 @@
 		</div>
 	</div>
 	<div class="container">
-		<div class="row col-md-12 text-center">
-			<h1>うんこ</h1>
-		</div>
-		<div class="row col-md-12 text-center">
-			<h1>うんこ</h1>
-		</div>
-		<div class="row col-md-12 text-center">
-			<h1>うんこ</h1>
-		</div>
-		<div class="row col-md-12 text-center">
-			<h1>うんこ</h1>
-		</div>
-		<div class="row col-md-12 text-center">
-			<h1>うんこ</h1>
-		</div>
-		<div class="row col-md-12 text-center">
-			<h1>うんこ</h1>
-		</div>
-		<div class="row col-md-12 text-center">
-			<h1>うんこ</h1>
-		</div>
-		<div class="row col-md-12 text-center">
-			<h1>うんこ</h1>
-		</div>
-		<div class="row col-md-12 text-center">
-			<h1>うんこ</h1>
-		</div>
-		<div class="row col-md-12 text-center">
-			<h1>うんこ</h1>
-		</div>
-		<div class="row col-md-12 text-center">
-			<h1>うんこ</h1>
-		</div>
-		<div class="row col-md-12 text-center">
-			<h1>うんこ</h1>
-		</div>
-		<div class="row col-md-12 text-center">
-			<h1>うんこ</h1>
-		</div>
-		<div class="row col-md-12 text-center">
-			<h1>うんこ</h1>
-		</div>
-		<div class="row col-md-12 text-center">
-			<h1>うんこ</h1>
-		</div>
-		<div class="row col-md-12 text-center">
-			<h1>うんこ</h1>
-		</div>
-		<div class="row col-md-12 text-center">
-			<h1>うんこ</h1>
-		</div>
-		<div class="row col-md-12 text-center">
-			<h1>うんこ</h1>
-		</div>
-		<div class="row col-md-12 text-center">
-			<h1>うんこ</h1>
-		</div>
-		<div class="row col-md-12 text-center">
-			<h1>うんこ</h1>
-		</div>
-		<div class="row col-md-12 text-center">
-			<h1>うんこ</h1>
-		</div>
-		<div class="row col-md-12 text-center">
-			<h1>うんこ</h1>
-		</div>
-		<div class="row col-md-12 text-center">
-			<h1>うんこ</h1>
-		</div>
-		<div class="row col-md-12 text-center">
-			<h1>うんこ</h1>
-		</div>
-		<div class="row col-md-12 text-center">
-			<h1>うんこ</h1>
-		</div>
-		<div class="row col-md-12 text-center">
-			<h1>うんこ</h1>
-		</div>
-		<div class="row col-md-12 text-center">
-			<h1>うんこ</h1>
+		
+		<div class="row text-white" style="margin-top: 200px; background-color: var(--info); padding: 5em;" id="aaa">
+			<div class="col-md-12 col-12">
+				<div class="">
+					<h1>CVFとは</h1>
+					<p>
+						この大会は参加者同士で競い合い、動画の魅力について知ってもらうために立ちあげたものです。
+					</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+				</div>
+			</div>
 		</div>
 	</div>
+
+	<footer class="bg-dark" style="margin-left: 0px; margin-top: 10px; margin-right: 0px; margin-bottom: 0px; padding-bottom: 5px;">
+		<div class="text-white text-center">
+			©Copyright 2020 All rights reserved by CVF
+		</div>
+	</footer>
+
 	<script>
-		/*
-		var scrollPosition = 0;
-		$(window).scroll(function () {
-			var scrollTop = $(this).scrollTop();
-			if (scrollTop > scrollPosition && scrollTop > $("#navbar").offset().top) {
+		const showheight = /*$('#aaa').offset().top - */100;
+		$(window).on('scroll', () => {
+			console.log(document.documentElement.scrollTop, showheight);
+			if(showheight <= document.documentElement.scrollTop){
 				$('#navbar').fadeIn();
-			} else {
+			}else{
 				$('#navbar').fadeOut();
 			}
-			scrollPosition = scrollTop;
-		});
-		*/
+			
+		})
 		$('.slick').slick({
 			adaptiveHeight: true,
-			autoplay: true,
+			autoplay: false,
 			autoplaySpeed: 3000,
 			dots: true
 		});
