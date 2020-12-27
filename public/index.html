@@ -33,7 +33,7 @@
 </head>
 <body>
 	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbar" style="display: none;">
-		<h1><a class="navbar-brand" href="#">CVF</a></h1>
+		<a class="navbar-brand" href="#"><img src="photos/CVF_air.png" alt="" class="img-fluid" width="70px"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border-color: rgba(0,0,0,0);">
 		  <span class="navbar-toggler-icon"></span>
 		</button>
@@ -60,13 +60,16 @@
 		  </ul>
 		</div>
 	</nav>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 col-12" style="width: 100%; padding-left: 0px; padding-right: 0px;">
-				<video src="https://img.ruther.tk/cvf/CVF-ICON-MOTION.mp4" disablePictureInPicture playsinline autoplay class="img-fluid"></video>
+	<div class="container" style="display: table;">
+		<div class="row" style="height: 100vh; display: table-cell; vertical-align: middle;">
+			<div class="col-md-12 col-12" style="width: 100%; padding-left: 0px; padding-right: 0px; top: -50px;">
+				<video src="https://img.ruther.tk/cvf/CVF-ICON-MOTION.mp4" disablePictureInPicture playsinline autoplay muted class="img-fluid"></video>
 			</div>
 		</div>
 	</div>
+	<footer class="fixed-bottom mb-5 text-center text-primary" id="unko" style="display: hidden;">
+		<h1>∨</h1>
+	</footer>
 	<div class="container">
 		
 		<div class="row text-white" style="margin-top: 200px; background-color: var(--info); padding: 5em;" id="aaa">
@@ -94,11 +97,28 @@
 					<p>a</p>
 					<p>a</p>
 					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
+					<p>a</p>
 				</div>
 			</div>
 		</div>
 	</div>
-
 	<footer class="bg-dark" style="margin-left: 0px; margin-top: 10px; margin-right: 0px; margin-bottom: 0px; padding-bottom: 5px;">
 		<div class="text-white text-center">
 			©Copyright 2020 All rights reserved by CVF
@@ -106,15 +126,25 @@
 	</footer>
 
 	<script>
+		var chinko = false;
+		$(window).on('load', function(){
+			setTimeout(function(){window.scrollTo(0,0);chinko = true;}, 10);
+		});
 		const showheight = /*$('#aaa').offset().top - */100;
 		$(window).on('scroll', () => {
 			console.log(document.documentElement.scrollTop, showheight);
-			if(showheight <= document.documentElement.scrollTop){
+			if(showheight <= document.documentElement.scrollTop && chinko){
 				$('#navbar').fadeIn();
 			}else{
 				$('#navbar').fadeOut();
 			}
-			
+
+			if(document.documentElement.scrollTop < 300 && chinko) {
+				$('#unko').fadeIn();
+				setTimeout(function(){$('#unko')})
+			}else{
+				$('#unko').fadeOut();
+			}
 		})
 		$('.slick').slick({
 			adaptiveHeight: false,
